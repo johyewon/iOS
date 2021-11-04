@@ -59,3 +59,56 @@ IOS 앱 개발 Swift 초격차 패키지 Online
 		02-03 화면 전환 개념
 			- 화면 전환은 크게 두 가지로 나뉘며 스토리보드 혹은 코드 내에서 전환할 수 있다.
 		
+  
+        02-05 ViewController Life Cycle
+            - 뷰의 생명주기
+                * Appearing     :   뷰가 화면에 나타나는 중
+                * Appeard       :   뷰가 화면에 나타는 게 완료된 상태
+                * Disappearing  :   뷰가 화면에서 사라지는 중
+                * Disappeared   :   뷰가 화면에서 사라진 상태
+                
+                
+            - 생성주기에 맞춰 호출되는 override 함수
+                * viewDidLoad()
+                    - 뷰 컨트롤러의 모든 뷰들이 메모리에 로드되었을 때 호출
+                    - 초기화 작업, 네트워크 호출 등에 사용
+                    - 한 번만 불려야 하는 것들을 호출할 때 이 함수 안에 호출
+                    
+                * viewWillAppear
+                    - onRestart()
+                    - 화면에 보이기 직전에 사용
+                    - 화면이 다시 돌아오기 직전에 호출도미
+                    
+                * viewDidAppear
+                    - onResume()
+                    - 뷰가 계층에 추가된 후에 호출
+                    - 애니메이션 작업
+                    
+                * viewWillDisappear()
+                    - onStop()
+                    - 뷰가 생성된 뒤 작업한 내용을 되돌리는 작업
+                    - 최종적으로 데이터를 저장해야 할 때 사용
+                    
+                * viewDidDisappear()
+                    - onDestroy()
+                    - view 가 사라진 뒤에 호출됨
+                    
+                    
+        02-06 화면과 화면 간 데이터 이동
+            1. 로드 시 데이터 전송
+                1-1 Code 로 호출 시
+                    * Code 로 view 로드 시에 as? 구문을 사용해 호출 viewClass 명 지정
+                    * as? 구문 사용 시 해당 변수에 접근 가능
+                    
+                1-2 Sugue 로 호출 시
+                    * prepare override 함수 필요
+                    * prepare 함수를 통해 as? 문 작성 후 원하는 변수에 접근
+                    * 전달 받은 class 에서 호출은 동일
+            
+            
+            2. 화면 종료와 이전 화면에 데이터 전송
+                * delegate - 자주 사용되는 디자인패턴
+                    - delegate 함수는 protocol 로 정의 후 참조해서 사용
+                    - 메모리 누수로 인해 weak 선언해 줘야 함
+                    - 받을 class 에서는 호출 시에 "viewController.delegate = self" 를 사용해 import
+                    - 그 후 class 에 extends 후 함수 정의 후에 사용한다.

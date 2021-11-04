@@ -48,6 +48,13 @@
                                     <action selector="tabCodePresentButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="U5y-T0-5qJ"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k4G-fg-GEF">
+                                <rect key="frame" x="186" y="399" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -67,6 +74,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="TKu-Fb-JHb"/>
+                    <connections>
+                        <outlet property="nameLabel" destination="k4G-fg-GEF" id="f1Y-Iu-yzC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -96,11 +106,21 @@
                                     <action selector="tabBackButton:" destination="SDl-aA-yOo" eventType="touchUpInside" id="nTu-O5-es1"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eqi-p9-LyE">
+                                <rect key="frame" x="186" y="550" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="F4D-qG-GIJ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="KHk-o8-50f"/>
+                    <connections>
+                        <outlet property="nameLabel" destination="eqi-p9-LyE" id="Q3I-No-sQc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RLe-FK-i4k" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -148,14 +168,24 @@
                                     <action selector="tabBackButton:" destination="SDl-aA-yOo" eventType="touchUpInside" id="sJ1-jC-jHN"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JCU-n7-kVl">
+                                <rect key="frame" x="186" y="548" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Tf5-10-rhb"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="nameLabel" destination="JCU-n7-kVl" id="4rW-6u-MQY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8aJ-Gk-VRb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-717" y="762"/>
+            <point key="canvasLocation" x="-717.39130434782612" y="761.38392857142856"/>
         </scene>
         <!--Sugue Present View Controller-->
         <scene sceneID="Xbl-QB-X0o">
@@ -206,8 +236,8 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Back Button"/>
                                 <connections>
                                     <action selector="tabBackButton:" destination="Bnn-sq-dA9" eventType="touchUpInside" id="96z-JR-l74"/>
-                                    <action selector="tabBackButton:" destination="iNt-Qg-oV2" eventType="touchUpInside" id="HyR-ct-tl6"/>
                                     <action selector="tabBackButton:" destination="Tuj-KW-Yy4" eventType="touchUpInside" id="O8j-9u-mge"/>
+                                    <action selector="tabBackButton:" destination="iNt-Qg-oV2" eventType="touchUpInside" id="bkQ-dx-tbR"/>
                                     <action selector="tabBackButton:" destination="SDl-aA-yOo" eventType="touchUpInside" id="vyZ-tP-dkx"/>
                                 </connections>
                             </button>
@@ -218,10 +248,20 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="acR-Ij-dFN">
+                                <rect key="frame" x="186" y="557" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="kN4-I5-sbs"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="nameLabel" destination="acR-Ij-dFN" id="EQ6-q4-FUr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FB2-Jd-19v" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
