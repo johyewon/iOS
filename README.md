@@ -112,3 +112,11 @@ IOS 앱 개발 Swift 초격차 패키지 Online
                     - 메모리 누수로 인해 weak 선언해 줘야 함
                     - 받을 class 에서는 호출 시에 "viewController.delegate = self" 를 사용해 import
                     - 그 후 class 에 extends 후 함수 정의 후에 사용한다.
+                    
+                    
+        03-02 UIStackView  - 열 또는 행에 view 들의 묶음을 배치할 수 있는 간소화된 인터페이스
+            * StackView == LinearLayout
+            * Horizontal & Vertical 로 설정할 수 있음
+            * Distributon -> weight 
+                - Fill & Fill Equally 
+                
