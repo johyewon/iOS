@@ -39,6 +39,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="contentLabel" destination="EJc-9h-jXy" id="ebB-el-dRQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -47,7 +50,7 @@
         <!--설정-->
         <scene sceneID="Rqh-2T-cXx">
             <objects>
-                <viewController id="VK8-v0-Qdt" sceneMemberID="viewController">
+                <viewController id="VK8-v0-Qdt" customClass="SettingViewController" customModule="LEDBoard" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KFe-OK-jfF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -88,16 +91,25 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="56" height="46"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" image="yellow_circle"/>
+                                                <connections>
+                                                    <action selector="tabTextColorButton:" destination="VK8-v0-Qdt" eventType="touchUpInside" id="Gyd-Hq-zDf"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" alpha="0.20000000000000001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Cx-sk-Qra">
                                                 <rect key="frame" x="70" y="0.0" width="56" height="46"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" image="purple_circle"/>
+                                                <connections>
+                                                    <action selector="tabTextColorButton:" destination="VK8-v0-Qdt" eventType="touchUpInside" id="Z2O-aY-coI"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" alpha="0.20000000000000001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QSG-bY-S6J">
                                                 <rect key="frame" x="140" y="0.0" width="56" height="46"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" image="green_circle" title=""/>
+                                                <connections>
+                                                    <action selector="tabTextColorButton:" destination="VK8-v0-Qdt" eventType="touchUpInside" id="PrD-bS-Sv1"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -119,16 +131,25 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="56" height="46"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" image="black_circle" title=""/>
+                                                <connections>
+                                                    <action selector="tabBackgroundColorButton:" destination="VK8-v0-Qdt" eventType="touchUpInside" id="gdu-i4-TdT"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" alpha="0.20000000000000001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dhB-Wo-a1V">
                                                 <rect key="frame" x="70" y="0.0" width="56" height="46"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" image="blue_circle" title=""/>
+                                                <connections>
+                                                    <action selector="tabBackgroundColorButton:" destination="VK8-v0-Qdt" eventType="touchUpInside" id="Glg-L8-zI4"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" alpha="0.20000000000000001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nf0-D9-yfO">
                                                 <rect key="frame" x="140" y="0.0" width="56" height="46"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" image="orange_circle" title=""/>
+                                                <connections>
+                                                    <action selector="tabBackgroundColorButton:" destination="VK8-v0-Qdt" eventType="touchUpInside" id="5cY-OJ-VCA"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -138,6 +159,10 @@
                                 <rect key="frame" x="183" y="438.5" width="48.5" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="저장"/>
+                                <connections>
+                                    <action selector="tabSaveButton:" destination="VK8-v0-Qdt" eventType="touchUpInside" id="PE8-S8-TIB"/>
+                                    <action selector="tabTextColorButton:" destination="VK8-v0-Qdt" eventType="touchUpInside" id="mCz-tm-4DX"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="toe-Ui-ezy"/>
@@ -157,6 +182,15 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="설정" id="XPy-5T-m2l"/>
+                    <connections>
+                        <outlet property="blackButton" destination="SmZ-6y-BcH" id="uvu-R7-e3D"/>
+                        <outlet property="blueButton" destination="dhB-Wo-a1V" id="y9d-6z-eKq"/>
+                        <outlet property="greenButton" destination="QSG-bY-S6J" id="v2x-7Q-G2Y"/>
+                        <outlet property="orangeButton" destination="Nf0-D9-yfO" id="Ela-Wy-bS3"/>
+                        <outlet property="purpleButton" destination="5Cx-sk-Qra" id="Hzz-XD-rgb"/>
+                        <outlet property="textField" destination="TyK-Gj-PVJ" id="f4J-iK-xCT"/>
+                        <outlet property="yellowButton" destination="eaD-T8-YoT" id="N3x-19-AWL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oYG-ud-kGR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

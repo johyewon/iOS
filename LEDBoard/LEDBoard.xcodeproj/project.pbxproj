@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5F5ECB5A2734B57A00D751FA /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5ECB592734B57A00D751FA /* SettingViewController.swift */; };
 		5F923A182733A5CA00F5044D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F923A172733A5CA00F5044D /* AppDelegate.swift */; };
 		5F923A1A2733A5CA00F5044D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F923A192733A5CA00F5044D /* SceneDelegate.swift */; };
 		5F923A1C2733A5CA00F5044D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F923A1B2733A5CA00F5044D /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5F5ECB592734B57A00D751FA /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		5F923A142733A5CA00F5044D /* LEDBoard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LEDBoard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F923A172733A5CA00F5044D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5F923A192733A5CA00F5044D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				5F923A202733A5CB00F5044D /* Assets.xcassets */,
 				5F923A222733A5CB00F5044D /* LaunchScreen.storyboard */,
 				5F923A252733A5CB00F5044D /* Info.plist */,
+				5F5ECB592734B57A00D751FA /* SettingViewController.swift */,
 			);
 			path = LEDBoard;
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 				5F923A1C2733A5CA00F5044D /* ViewController.swift in Sources */,
 				5F923A182733A5CA00F5044D /* AppDelegate.swift in Sources */,
 				5F923A1A2733A5CA00F5044D /* SceneDelegate.swift in Sources */,
+				5F5ECB5A2734B57A00D751FA /* SettingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
