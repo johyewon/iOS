@@ -39,7 +39,7 @@ class ViewController: UIViewController, SendDataDelegate {
         guard let viewController = self.storyboard?.instantiateViewController(withIdentifier: "CodePresentViewController") as? CodePresentViewController else {
             return
         }
-        viewController.modalPresentationStyle = .fullScreen     // 풀 스크린 설정 (모달 x)
+        viewController.modalPresentationStyle = .pageSheet     // 풀 스크린 설정 (모달 x)
         viewController.name = "Hanix_x"
         viewController.delegate = self
         self.present(viewController, animated: true, completion: nil)
@@ -71,7 +71,7 @@ class ViewController: UIViewController, SendDataDelegate {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let viewController = segue.destination as? SuguePushViewController {
-            viewController.name = "Hanix_x"
+            viewController.name = "Hani"   // segue 로 데이터 전송
         }
     }
     
