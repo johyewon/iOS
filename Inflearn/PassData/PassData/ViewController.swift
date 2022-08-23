@@ -7,7 +7,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    var name: String? = ""
+    var name: String? = ""  
     
     @IBOutlet weak var firstTextView: UITextView!
     @IBOutlet weak var myLabel: UILabel!
